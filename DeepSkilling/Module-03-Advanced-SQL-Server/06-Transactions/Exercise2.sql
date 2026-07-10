@@ -1,0 +1,13 @@
+USE CTS_Training;
+GO
+
+BEGIN TRANSACTION;
+
+INSERT INTO Employee
+VALUES (109, 'Karthik', 'IT', 62000);
+
+ROLLBACK TRANSACTION;
+GO
+
+SELECT * FROM Employee;
+GO

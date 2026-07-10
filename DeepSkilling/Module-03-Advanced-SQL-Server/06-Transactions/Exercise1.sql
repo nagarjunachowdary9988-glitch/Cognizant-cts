@@ -1,0 +1,13 @@
+USE CTS_Training;
+GO
+
+BEGIN TRANSACTION;
+
+INSERT INTO Employee
+VALUES (108, 'Priya', 'HR', 58000);
+
+COMMIT TRANSACTION;
+GO
+
+SELECT * FROM Employee;
+GO
